@@ -1,7 +1,4 @@
-# FB Lookalike Audience Tool
-# 使用 Streamlit 建立 Lookalike Audience 的網頁工具
-# 完整程式碼請參考先前提供的版本，此處為 placeholder
-print("import streamlit as st
+import streamlit as st
 import time
 
 from facebook_business.api import FacebookAdsApi
@@ -274,4 +271,4 @@ if "audiences" in st.session_state:
             for n, err in failures[:20]:
                 st.write(f"- {n}｜原因：{err}")
             if len(failures) > 20:
-                st.write(f"…以及 {len(failures)-20} 項")")
+                st.write(f"…以及 {len(failures)-20} 項")
